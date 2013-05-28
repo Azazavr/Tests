@@ -5,7 +5,7 @@ public class b {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 	
-	System.out.println("Введите сумму покупки: ");
+	System.out.println("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ РїРѕРєСѓРїРєРё: ");
 	String s=sc.nextLine();
 	int x=Integer.parseInt(s);
 	
@@ -16,23 +16,23 @@ public class b {
 
 	switch (a){
 	case 0:
-		System.out.println("Скидка = 0");
+		System.out.println("РЎРєРёРґРєР° = 0");
 		break;
 		
 	case 1:
-		System.out.println("Скидка = 3%");
+		System.out.println("РЎРєРёРґРєР° = 3%");
 		break;
 	
 	case 2:
-		System.out.println("Скидка = 5%");
+		System.out.println("РЎРєРёРґРєР° = 5%");
 		break;
 		
 	case 3:
-		System.out.println("Скидка = 7%");
+		System.out.println("РЎРєРёРґРєР° = 7%");
 		break;
 	
 	case 4:
-		System.out.println("Скидка = 7%");
+		System.out.println("РЎРєРёРґРєР° = 7%");
 		break;
 
 	}
