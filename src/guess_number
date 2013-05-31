@@ -1,9 +1,30 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class guess{
-public static void main(String[] args) {
+public class guess {
+  public static void main(String[] args) {
 
-Scanner sc=new Scanner(System.in);
-int a=0;
-
-system.out.println("Угадайте задуманное число от 1 до 100");
+		int c = 0;
+		int x = (int) (Math.random() * 101);
+		int b;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Угадайте загаданное число от 1 до 100.");
+				
+		do{
+		
+			b = Integer.parseInt(sc.nextLine());
+			
+			if (x<b)
+			System.out.println("Ваше число больше, попробуйте ещё раз: ");
+						
+			else if (x>b)
+			System.out.println("Ваше число меньше, попробуйте ещё раз: ");
+			c++;
+				
+		}while (b != x);
+		
+		System.out.println("Поздравляем, Вы угадали!");
+		System.out.println("Количество попыток" + c);
+		
+		
+	}
+}
