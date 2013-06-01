@@ -1,0 +1,12 @@
+public class test {
+  
+	public static void main(String[] args) {
+		
+		int []m={1,2,3,4,5};
+		
+		System.out.println("Сумма массива= " +(m[0]+m[1]+m[2]+m[3]+m[4]));
+		System.out.println("Среднее значение элементов массива = "+(m[0]+m[1]+m[2]+m[3]+m[4])/5);
+		
+
+	}
+}
