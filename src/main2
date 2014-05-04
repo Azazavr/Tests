@@ -1,0 +1,54 @@
+import java.util.*;
+import java.io.*;
+
+public class main2 {
+
+    // Peremennaya vne metoda (dostupnaya dlya vseh metodov)
+
+    static int[][] field = new int[4][4]; // Peremennaya obyavlennaya v klasse do metodov
+    static int[] pole = new int[16]; //(int)(Math.random() * 15);
+    //static int pole1=0;
+    static int var(){ //Заполнение поля -1
+        for (int i = 0; i< pole.length; i++){
+            //int b=0;
+            int a=(int)(Math.random()*15);
+            pole[i]=a;
+            //b++;
+            if (pole[1] == pole.length&&pole[2] == pole.length&&pole[3] == pole.length&&pole[4] == pole.length&&pole[5] == pole.length
+            &&pole[6] == pole.length&&pole[7] == pole.length&&pole[8] == pole.length&&pole[9] == pole.length&&pole[10] == pole.length&&pole[11] == pole.length&&
+            pole[12] == pole.length&&pole[13] == pole.length&&pole[14] == pole.length&&pole[15] == pole.length) {
+                pole[i] = (int) (Math.random() * 15);
+            }
+
+            //System.out.println(pole[i]);
+        }return pole[15];
+    }
+
+    static void prepare() // Pustoy metod, zapolnayushiy pole probelami
+    {
+        for (int i = 0; i < field.length; i++) { // Stroki
+            for (int j = 0; j < field[i].length; j++) // Stolbci
+                // field[i].length - dlina i stroki
+                field[i][j]=var();
+        }
+    }
+
+    // ------
+    static void show() { // Risuem pole
+        for (int i = 0; i < field.length; i++) {
+            System.out.print( "|" );
+            for (int j = 0; j < field[i].length; j++){
+                System.out.print(field[i][j] + "|");
+            }
+            System.out.println();
+        }
+    }
+
+    // Telo programmi
+    public static void main(String[] args) {
+
+        prepare();
+        show();
+        //var();
+    }
+}
